@@ -1,0 +1,33 @@
+# Env and secrets
+.env
+.env.local
+.env.*.local
+*.env
+
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Flutter / Dart
+apps/candidate-app/.dart_tool/
+apps/candidate-app/.packages
+apps/candidate-app/build/
+apps/candidate-app/*.iml
+apps/candidate-app/.flutter-plugins
+apps/candidate-app/.flutter-plugins-dependencies
+
+# IDE
+.idea/
+*.swp
+.DS_Store
+
+# Supabase local
+supabase/.branches
+supabase/.temp
+
+# Logs
+*.log
+npm-debug.log*
