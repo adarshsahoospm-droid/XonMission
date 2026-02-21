@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
-import '../../features/placeholder_screen.dart';
+import '../../features/landing/candidate_landing_screen.dart';
+import '../../features/auth/login_placeholder_screen.dart';
 
 final appRouter = RouterConfiguration(
   initialRoute: '/',
   routes: {
-    '/': (context) => const PlaceholderScreen(),
+    '/': (context) => const CandidateLandingScreen(),
+    '/login': (context) => const LoginPlaceholderScreen(),
   },
 );
 

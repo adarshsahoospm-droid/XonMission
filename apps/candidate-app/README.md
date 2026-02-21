@@ -2,18 +2,25 @@
 
 Android-first; iOS later. Uses Supabase for auth and backend.
 
-## Setup
+## Run the app
 
-1. Copy `.env.example` to `.env` and set `SUPABASE_URL` and `SUPABASE_ANON_KEY`.
-2. If `android/` and `ios/` are missing, run from this directory:
-   ```bash
-   flutter create . --project-name candidate_app
-   ```
-3. Run:
-   ```bash
-   flutter pub get
-   flutter run
-   ```
+From this directory (with [Flutter](https://docs.flutter.dev/get-started/install) installed):
+
+```bash
+./run.sh
+```
+
+Or manually:
+
+```bash
+# First time only: generate android/ and ios/
+flutter create . --project-name candidate_app
+
+flutter pub get
+flutter run
+```
+
+Use an Android device or emulator (or iOS simulator on macOS). Optional: copy `.env.example` to `.env` and set `SUPABASE_URL` and `SUPABASE_ANON_KEY` when you add auth.
 
 ## Structure
 
